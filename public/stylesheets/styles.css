@@ -20,7 +20,11 @@ h1 {
 table {
   margin: auto;
   text-align: left;
-  width: 20%;
+  width: 22%;
   font-family: 'Droid Sans', sans-serif;
   background-color: white;
+}
+/* line 43, ../../compass-master/sass/styles.scss */
+table td, table th {
+  padding-left: 10px;
 }
