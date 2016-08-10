@@ -36,9 +36,9 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="city in cities">
+			<tr ng-repeat="city in cities track by $index">
 				<!-- <td>{{city.yearRank}}</td> -->
-				<td>{{city.city}}</td>
+				<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
 				<td>{{city.state}}</td>
 				<!-- <td>{{city.yearEstimate}}</td>
 				<td>{{city.lastCensus}}</td>
