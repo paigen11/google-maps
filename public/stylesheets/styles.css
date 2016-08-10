@@ -17,14 +17,20 @@ h1 {
 }
 
 /* line 37, ../../compass-master/sass/styles.scss */
+.table {
+  width: 25%;
+  overflow: scroll;
+  height: 99vh;
+}
+
+/* line 42, ../../compass-master/sass/styles.scss */
 table {
   margin: auto;
   text-align: left;
-  width: 22%;
   font-family: 'Droid Sans', sans-serif;
   background-color: white;
 }
-/* line 43, ../../compass-master/sass/styles.scss */
+/* line 47, ../../compass-master/sass/styles.scss */
 table td, table th {
   padding-left: 10px;
 }

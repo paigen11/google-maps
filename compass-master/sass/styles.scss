@@ -34,10 +34,14 @@ h1{
 	float: left;
 }
 
+.table{
+	width: 25%;
+	overflow: scroll;
+	height: 99vh;
+}
 table{
 	margin:auto;
 	text-align: left;
-	width: 22%;
 	font-family: 'Droid Sans', sans-serif;
 	background-color: white;
 	& td, th{

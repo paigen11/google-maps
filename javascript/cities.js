@@ -12,7 +12,7 @@ function City(yearRank,city,state,yearEstimate,lastCensus,change,landArea,landAr
 	this.landArea = landArea;
 	this.landAreaInKm = landAreaInKm;
 	this.lastPopDensity = lastPopDensity;
-	this.lastPopDensityInKM = lastPopDensityInKM;
+	this.lastPopDensityInKm = lastPopDensityInKm;
 	latLonArray = latLon.split(",");
 	this.lat = Number(latLonArray[0]);
 	this.lon = Number(latLonArray[1]);
@@ -71,10 +71,10 @@ for(var i = 0; i < arr.length; i++){
 	var landArea = arr[i][6];
 	var landAreaInKm = arr[i][7];
 	var lastPopDensity = arr[i][8];
-	var lastPopDensityInKM = arr[i][9];
+	var lastPopDensityInKm = arr[i][9];
 	var lat = arr[i][10];
 	var lon = arr[i][11]
-	var newCity = new City(yearRank, city, state, yearEstimate, lastCensus, change, landArea, landAreaInKm, lastPopDensity, lastPopDensityInKM, lat, lon);
+	var newCity = new City(yearRank, city, state, yearEstimate, lastCensus, change, landArea, landAreaInKm, lastPopDensity, lastPopDensityInKm, lat, lon);
 	cities.push(newCity);
 }
 

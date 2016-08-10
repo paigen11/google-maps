@@ -25,40 +25,42 @@
 	<div class="container-fluid">
 		<div class="row">
 			<h1>The 40 Most Populous US Cities</h1>
-	<table class="table-striped table-bordered table-hover">
-		<thead>
-			<tr>
-				<!-- <th>Year Rank</th> -->
-				<th>City</th>
-				<th>State</th>
-			<!-- 	<th>Year Estimate</th>
-				<th>Last Census</th>
-				<th>Change</th>
-				<th>Land Area</th>
-				<th>Land Area in KM</th>
-				<th>Last Pop Density</th>
-				<th>Last Pop Density in KM</th>
-				<th>Latitude</th>
-				<th>Longitude</th> -->
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="city in cities track by $index">
-				<!-- <td>{{city.yearRank}}</td> -->
-				<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
-				<td>{{city.state}}</td>
-				<!-- <td>{{city.yearEstimate}}</td>
-				<td>{{city.lastCensus}}</td>
-				<td>{{city.change}}</td>
-				<td>{{city.landArea}}</td>
-				<td>{{city.landAreaInKM}}</td>
-				<td>{{city.lastPopDensity}}</td>
-				<td>{{city.lastPopDensityInKM}}</td>
-				<td>{{city.lat}}</td>
-				<td>{{city.lon}}</td> -->
-			</tr>
-		</tbody>
-	</table>
+				<div class='table'>
+					<table class="table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<!-- <th>Year Rank</th> -->
+								<th>City</th>
+								<th>State</th>
+								<th>Year Estimate</th>
+								<th>Last Census</th>
+								<th>Change</th>
+								<th>Land Area</th>
+								<th>Land Area in KM</th>
+								<th>Last Pop Density</th>
+								<th>Last Pop Density in KM</th>
+								<th>Latitude</th>
+								<th>Longitude</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="city in cities track by $index">
+								<!-- <td>{{city.yearRank}}</td> -->
+								<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
+								<td>{{city.state}}</td>
+								<td>{{city.yearEstimate}}</td>
+								<td>{{city.lastCensus}}</td>
+								<td>{{city.change}}</td>
+								<td>{{city.landArea}}</td>
+								<td>{{city.landAreaInKm}}</td>
+								<td>{{city.lastPopDensity}}</td>
+								<td>{{city.lastPopDensityInKm}}</td>
+								<td>{{city.lat}}</td>
+								<td>{{city.lon}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
 		</div>
 	</div>
 
