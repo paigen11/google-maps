@@ -1,0 +1,73 @@
+@import 'configs/variables';
+@import 'components/misc';
+@import 'layout/header';
+@import 'layout/footer';
+
+body{
+	width: 100%;
+	margin: 0px;
+	background-color: $mainBgColor;
+	font-family: 'Nunito', sans-serif;
+}
+
+.body{
+	h1{
+		text-align: center;
+		font-size: 60px;
+		color: #fff;
+		font-family: 'Nunito', sans-serif;
+	}
+	.container{
+		width: $width;
+		overflow: hidden;
+		&.after-header{
+			padding-top: 40px;
+		}
+		.header-wrapper{
+			background-color: #1f1f2e;
+		}
+		.col{
+			width: 23%;
+			margin: auto $margin;
+			display: inline-block;
+			@extend .base-font;
+			color: #fff;
+			&:hover .overview{
+					display:block;
+					text-align: left;
+					font-size: 15px;
+					}
+			& span{
+				display: block;
+				font-size: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-family: 'Nunito', sans-serif;
+				}
+					.overview {
+					display: none;
+					font-size: 20px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					font-family: 'Nunito', sans-serif;
+					}
+			}
+		}
+			
+		.search{
+			text-align: center;
+			padding: 30px;
+			& input.searches{
+			font-size: 20px;
+			width: 30%;
+			font-family: 'Nunito', sans-serif;
+			}
+			& input.button{
+				font-size: 20px;
+				background-color: black;
+				color: white;
+				font-family: 'Nunito', sans-serif;
+			}
+		}
+		
+}
