@@ -1,10 +1,10 @@
 #What is it?
 ------------
-Map displaying the top 40 most populous cities in the US (and their accompanying facts) using HTML, SASS, JavaScript AngularJS and the Google Maps API.
+Map displaying the top 40 most populous cities in the US (and their accompanying facts) using HTML, SASS, JavaScript, AngularJS and the Google Maps API.
 
 ##Languages Used
 ------------
-*HTML
+  *HTML
   * CSS (through SASS)
   * Native JavaScript
   * AngularJS
@@ -32,6 +32,7 @@ An event listener is added to each marker, so when it's clicked on the name of t
 Code Examples
 ------------
 JavaScript for creating the markers for each city
+
 ```function createMarker(city){
 		console.log(city);
 		var myLatlng = {lat: city.lat, lng: city.lon};
@@ -44,6 +45,7 @@ JavaScript for creating the markers for each city
 	    );```
 
 AngularJS that makes the city names clickable and opens up their name above their pin on the map
+
 ```$scope.triggerClick = function(index){
 		google.maps.event.trigger(markers[index], 'click')
 	}```	    
