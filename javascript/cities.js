@@ -2,7 +2,7 @@
 var cities = [];
 
 function City(yearRank,city,state,yearEstimate,lastCensus,change,landArea,landAreaInKm,lastPopDensity,lastPopDensityInKM,latLon){
-	this.latLon = latLon.split(",");
+	var latLonArray = [];
 	this.yearRank = yearRank;
 	this.city = city;
 	this.state = state;
@@ -79,3 +79,5 @@ for(var i = 0; i < arr.length; i++){
 }
 
 console.log(cities);
+
+// or could have done cities.push(new City("1","New York","New York","8,491,079","8,175,133","+3.86%","302.6 sq mi","783.8 km2","27,012 per sq mi","10,430 km−2","40.6643,-73.9385"));

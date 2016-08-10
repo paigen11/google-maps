@@ -3,48 +3,55 @@
 <head>
 	<title></title>
 
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+	<!-- angular script -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<!-- google maps script -->
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&v=3.exp&signed_in=true"></script>
 
 	<script type="text/javascript" src="javascript/cities.js"></script>
 
 	<script type="text/javascript" src="javascript/custom.js"></script>
+
 </head>
 <body ng-controller="googleMapsController">
 
-<table>
-	<thead>
-		<tr>
-			<th>Year Rank</th>
-			<th>City</th>
-			<th>State</th>
-			<th>Year Estimate</th>
-			<th>Last Census</th>
-			<th>Change</th>
-			<th>Land Area</th>
-			<th>Land Area in KM</th>
-			<th>Last Pop Density</th>
-			<th>Last Pop Density in KM</th>
-			<th>Latitude</th>
-			<th>Longitude</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="city in cities">
-			<td>{{city.yearRank}}</td>
-			<td>{{city.city}}</td>
-			<td>{{city.state}}</td>
-			<td>{{city.yearEstimate}}</td>
-			<td>{{city.lastCensus}}</td>
-			<td>{{city.change}}</td>
-			<td>{{city.landArea}}</td>
-			<td>{{city.landAreaInKM}}</td>
-			<td>{{city.lastPopDensity}}</td>
-			<td>{{city.lastPopDensityInKM}}</td>
-			<td>{{city.lat}}</td>
-			<td>{{city.lon}}</td>
-		</tr>
-	</tbody>
-</table>
+	<div id="map"></div>
+
+	<table border=1>
+		<thead>
+			<tr>
+				<!-- <th>Year Rank</th> -->
+				<th>City</th>
+				<th>State</th>
+			<!-- 	<th>Year Estimate</th>
+				<th>Last Census</th>
+				<th>Change</th>
+				<th>Land Area</th>
+				<th>Land Area in KM</th>
+				<th>Last Pop Density</th>
+				<th>Last Pop Density in KM</th>
+				<th>Latitude</th>
+				<th>Longitude</th> -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="city in cities">
+				<!-- <td>{{city.yearRank}}</td> -->
+				<td>{{city.city}}</td>
+				<td>{{city.state}}</td>
+				<!-- <td>{{city.yearEstimate}}</td>
+				<td>{{city.lastCensus}}</td>
+				<td>{{city.change}}</td>
+				<td>{{city.landArea}}</td>
+				<td>{{city.landAreaInKM}}</td>
+				<td>{{city.lastPopDensity}}</td>
+				<td>{{city.lastPopDensityInKM}}</td>
+				<td>{{city.lat}}</td>
+				<td>{{city.lon}}</td> -->
+			</tr>
+		</tbody>
+	</table>
 
 </body>
 </html>
