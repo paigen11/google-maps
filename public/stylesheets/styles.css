@@ -1,6 +1,26 @@
-/* line 23, ../../compass-master/sass/styles.scss */
+/* line 22, ../../compass-master/sass/styles.scss */
+body {
+  background-color: #DCDCDC;
+}
+
+/* line 26, ../../compass-master/sass/styles.scss */
+h1 {
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* line 31, ../../compass-master/sass/styles.scss */
 #map {
   height: 99vh;
   width: 75%;
   float: left;
+}
+
+/* line 37, ../../compass-master/sass/styles.scss */
+table {
+  margin: auto;
+  text-align: left;
+  width: 20%;
+  font-family: 'Droid Sans', sans-serif;
+  background-color: white;
 }
