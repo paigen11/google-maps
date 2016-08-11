@@ -25,12 +25,19 @@
 	<div class="container-fluid">
 		<div class="row">
 			<h1>The 40 Most Populous US Cities</h1>
+
+					<form ng-submit="updateMarkers()">
+						<input id="filter-input" ng-model="citiesFilter" type="text">
+						<button class="btn btn-success" type="submit">Update the Map</button>
+					</form>
+
 				<div class='table'>
 					<table class="table-striped table-bordered table-hover">
 						<thead>
 							<tr>
 								<!-- <th>Year Rank</th> -->
 								<th>City</th>
+								<th>Display Info:</th>
 								<th>State</th>
 								<th>Year Estimate</th>
 								<th>Last Census</th>
@@ -44,22 +51,26 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr ng-repeat="city in cities track by $index">
+							<tr ng-repeat="city in (filteredCities = (cities | filter: citiesFilter)) track by $index">
 								<!-- <td>{{city.yearRank}}</td> -->
 								<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
-								<td>{{city.state}}</td>
-								<td>{{city.yearEstimate}}</td>
-								<td>{{city.lastCensus}}</td>
-								<td>{{city.change}}</td>
-								<td>{{city.landArea}}</td>
-								<td>{{city.landAreaInKm}}</td>
-								<td>{{city.lastPopDensity}}</td>
-								<td>{{city.lastPopDensityInKm}}</td>
-								<td>{{city.lat}}</td>
-								<td>{{city.lon}}</td>
+								<td><button class="btn btn-primary" ng-click="toggle($index)">Click here for more info</button></td>
+								<td ng-show="city.clicked">{{city.state}}</td>
+								<td ng-show="city.clicked">{{city.yearEstimate}}</td>
+								<td ng-show="city.clicked">{{city.lastCensus}}</td>
+								<td ng-show="city.clicked">{{city.change}}</td>
+								<td ng-show="city.clicked">{{city.landArea}}</td>
+								<td ng-show="city.clicked">{{city.landAreaInKm}}</td>
+								<td ng-show="city.clicked">{{city.lastPopDensity}}</td>
+								<td ng-show="city.clicked">{{city.lastPopDensityInKm}}</td>
+								<td ng-show="city.clicked">{{city.lat}}</td>
+								<td ng-show="city.clicked">{{city.lon}}</td>
+								<!-- </div> -->
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div id="list-window">
 				</div>	
 		</div>
 	</div>
