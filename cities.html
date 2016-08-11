@@ -19,17 +19,34 @@
 
 </head>
 <body ng-controller="googleMapsController">
+	<div class="container-fluid">
+		<div class="row">
+		<h1>The 40 Most Populous US Cities</h1>
+		</div>
+		<div class="row">
+			<div id="floating-panel">
+				<b>Start: </b>
+				<select ng-model="selectedStart" ng-options="city for city in startCity" ng-change="getDirections()"></select>
+				<b>End: </b>
+				<select ng-model="selectedEnd" ng-options="city for city in startCity" ng-change="getDirections()"></select>
+			</div>
+		</div>
+	</div>	
 
 	<div id="map"></div>
 
 	<div class="container-fluid">
 		<div class="row">
-			<h1>The 40 Most Populous US Cities</h1>
-
+			<div class="col">
 					<form ng-submit="updateMarkers()">
-						<input id="filter-input" ng-model="citiesFilter" type="text">
 						<button class="btn btn-success" type="submit">Update the Map</button>
+						<input id="filter-input" ng-model="citiesFilter" type="text">
 					</form>
+			</div>		
+					<div>
+						<select ng-model="mySelectedPlace" ng-options="place for place in places"></select>
+						<p>Points of Interest: </p>
+					</div>	
 
 				<div class='table'>
 					<table class="table-striped table-bordered table-hover">
@@ -37,7 +54,9 @@
 							<tr>
 								<!-- <th>Year Rank</th> -->
 								<th>City</th>
-								<th>Display Info:</th>
+								<th>Display Info</th>
+								<th>Get A Closer Look</th>
+								<!-- <th>Directions</th> -->
 								<th>State</th>
 								<th>Year Estimate</th>
 								<th>Last Census</th>
@@ -55,6 +74,8 @@
 								<!-- <td>{{city.yearRank}}</td> -->
 								<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
 								<td><button class="btn btn-primary" ng-click="toggle($index)">Click here for more info</button></td>
+								<!-- <td><button type="submit" ng-click="getDirections(city.lat, city.lon)">Get Directions</button></td> -->
+								<td><button type="submit" ng-click="zoomToCity(city.lat, city.lon)">Zoom in to City Center</button></td>
 								<td ng-show="city.clicked">{{city.state}}</td>
 								<td ng-show="city.clicked">{{city.yearEstimate}}</td>
 								<td ng-show="city.clicked">{{city.lastCensus}}</td>
@@ -65,12 +86,13 @@
 								<td ng-show="city.clicked">{{city.lastPopDensityInKm}}</td>
 								<td ng-show="city.clicked">{{city.lat}}</td>
 								<td ng-show="city.clicked">{{city.lon}}</td>
+								
 								<!-- </div> -->
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<div id="list-window">
+				<div id="left-panel">
 				</div>	
 		</div>
 	</div>
