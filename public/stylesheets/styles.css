@@ -1,21 +1,21 @@
-/* line 22, ../../compass-master/sass/styles.scss */
+/* line 23, ../../compass-master/sass/styles.scss */
 body {
   background-color: #DCDCDC;
 }
 
-/* line 26, ../../compass-master/sass/styles.scss */
+/* line 27, ../../compass-master/sass/styles.scss */
 h1 {
   text-align: center;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 31, ../../compass-master/sass/styles.scss */
+/* line 32, ../../compass-master/sass/styles.scss */
 p {
   display: inline-block;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 36, ../../compass-master/sass/styles.scss */
+/* line 37, ../../compass-master/sass/styles.scss */
 #floating-panel {
   position: absolute;
   top: 10px;
@@ -30,33 +30,33 @@ p {
   padding-left: 10px;
 }
 
-/* line 50, ../../compass-master/sass/styles.scss */
+/* line 51, ../../compass-master/sass/styles.scss */
 #map {
   height: 99vh;
   width: 75%;
   float: left;
 }
 
-/* line 56, ../../compass-master/sass/styles.scss */
+/* line 57, ../../compass-master/sass/styles.scss */
 .table {
   width: 25%;
   overflow: scroll;
   height: 91vh;
 }
 
-/* line 61, ../../compass-master/sass/styles.scss */
+/* line 62, ../../compass-master/sass/styles.scss */
 table {
   margin: auto;
   text-align: left;
   font-family: 'Droid Sans', sans-serif;
   background-color: white;
 }
-/* line 66, ../../compass-master/sass/styles.scss */
+/* line 67, ../../compass-master/sass/styles.scss */
 table td, table th {
   padding-left: 10px;
 }
 
-/* line 71, ../../compass-master/sass/styles.scss */
+/* line 72, ../../compass-master/sass/styles.scss */
 #left-panel {
   font-family: 'Droid Sans', sans-serif;
   line-height: 30px;
@@ -66,16 +66,21 @@ table td, table th {
   width: 800px;
   overflow: auto;
 }
-/* line 79, ../../compass-master/sass/styles.scss */
+/* line 80, ../../compass-master/sass/styles.scss */
 #left-panel select {
   width: 100%;
   font-size: 15px;
 }
-/* line 83, ../../compass-master/sass/styles.scss */
+/* line 84, ../../compass-master/sass/styles.scss */
 #left-panel input {
   font-size: 15px;
 }
-/* line 86, ../../compass-master/sass/styles.scss */
+/* line 87, ../../compass-master/sass/styles.scss */
 #left-panel i {
   font-size: 12px;
+}
+
+/* line 93, ../../compass-master/sass/styles.scss */
+#left-panel .adp table {
+  font-family: 'Droid Sans', sans-serif;
 }

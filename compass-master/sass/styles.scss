@@ -19,6 +19,7 @@
 // @import "views/delivery";
 // @import "views/payment";
 // @import "views/account";
+
 body{
 	background-color: #DCDCDC;
 }
@@ -86,6 +87,11 @@ table{
     & i{
     	font-size: 12px;
     }
+
+}
+
+#left-panel .adp table{
+	font-family: 'Droid Sans', sans-serif;
 }
 
 

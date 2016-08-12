@@ -54,8 +54,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 
 	//shows/hides info for each city (doesn't work when cities have been narrowed down)
 	$scope.toggle = function(index){
-		$scope.cities[index].clicked = !$scope.cities[index].clicked;
-	// 	// $scope.filteredCities[index].clicked = !$scope.filteredCities[index].clicked;
+		$scope.filteredCities[index].clicked = !$scope.filteredCities[index].clicked;
 	};
 		
 	//loops through cities and creates markers for each city in the cities array
@@ -79,20 +78,22 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 		var origin = $scope.selectedStart;
 		var destination = $scope.selectedEnd;
 
-	    directionsDisplay.setMap(map);
-	    directionsDisplay.setPanel(document.getElementById('left-panel'));
-	    directionsService.route({
-	          origin: origin,
-	          destination: destination,
-	          travelMode: 'DRIVING'
-	        }, function(response, status) {
-	          if (status === 'OK') {
-	            directionsDisplay.setDirections(response);
-	          } else {
-	            window.alert('Directions request failed due to ' + status);
-	          }
-	        });
+		if(origin && destination){
+		    directionsDisplay.setMap(map);
+		    directionsDisplay.setPanel(document.getElementById('left-panel'));
+		    directionsService.route({
+		          origin: origin,
+		          destination: destination,
+		          travelMode: 'DRIVING'
+		        }, function(response, status) {
+		          if (status === 'OK') {
+		            directionsDisplay.setDirections(response);
+		          } else {
+		            window.alert('Directions request failed due to ' + status);
+		          }
+		        });
 	    // directionsDisplay.setMap(null);
+		}
 	};
 
 	$scope.startCity = [
