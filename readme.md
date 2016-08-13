@@ -19,9 +19,13 @@ Paige Niedringhaus
 
 ##Screenshots
 ------------
+Display driving directions: 
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-directions.png 'google-maps-directions.png')
+Display/hide city information with button: 
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-display-hide-city-info.png 'google-maps-display-hide-city-info.png')
+Display ability to filter cities with input box and button: 
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-cities.png 'google-maps-filter-cities.png')
+Display ability to filter points of interest within cities:
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-display-poi.png 'google-maps-display-poi.png')
 
 Further Info
