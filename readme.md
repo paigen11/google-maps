@@ -64,7 +64,6 @@ AngularJS that makes the city names clickable and opens up their name above thei
 AngularJS to zoom in to city centers and display selected places
 
 ```$scope.zoomToCity = function(lat, lon){
-		// var bounds = new google.maps.LatLng();
 		var cityLatLon = new google.maps.LatLng(lat, lon);
 		map = new google.maps.Map(
 			document.getElementById('map'),
@@ -73,7 +72,6 @@ AngularJS to zoom in to city centers and display selected places
 				center: cityLatLon
 			}
 		);
-
 		 infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         var places = $scope.mySelectedPlace;
