@@ -19,7 +19,10 @@ Paige Niedringhaus
 
 ##Screenshots
 ------------
-
+![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-directions.png 'google-maps-directions.png')
+![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-display-hide-city-info.png 'google-maps-display-hide-city-info.png')
+![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-cities.png 'google-maps-filter-cities.png')
+![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-display-poi.png 'google-maps-display-poi.png')
 
 Further Info
 ------------
