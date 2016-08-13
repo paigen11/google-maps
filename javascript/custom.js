@@ -6,7 +6,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 	var myLatlng = {lat: 40.000, lng: -98.000};
 	//defines map for Google
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 5,
+		zoom: 4,
 		center: myLatlng,
 		mapTypeId: 'terrain'
 	});
@@ -73,7 +73,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 		}
 	};
 
-	//problem with directions displaying in total at first glance
+	//lets users get directions from any city to another
 	$scope.getDirections = function(){
 		var origin = $scope.selectedStart;
 		var destination = $scope.selectedEnd;
@@ -96,6 +96,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 		}
 	};
 
+	//array of cities to choose from
 	$scope.startCity = [
 		'New York',
 		'Los Angeles',
@@ -138,6 +139,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 		'Atlanta'
 	];
 
+	//zoom in to city center and display points of interest (if selected from dropdown menu)
 	$scope.zoomToCity = function(lat, lon){
 		// var bounds = new google.maps.LatLng();
 		var cityLatLon = new google.maps.LatLng(lat, lon);
@@ -168,6 +170,7 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
         console.log(results);
       };
 
+      //info to display when POI is clicked on
       function createPointOfInterest(place) {
 	        var placeLoc = place.geometry.location;
 	        var marker = new google.maps.Marker({
@@ -181,11 +184,9 @@ googleMapsApp.controller("googleMapsController", function($scope, $http){
 	          infowindow.setContent('<div><strong>' + place.name + '</strong></div>' + '<div>Rating: ' + place.rating +'</div>' + '<div>Address: ' + place.vicinity +'</div>' );
 	          infowindow.open(map, this);
 	        });
-	        // bounds.extend(marker.getPosition());
 	  } 
 
-	// map.fitBounds(bounds);
-
+	 //array of Google Maps approved place types
 	$scope.places = [
 	    'accounting',
 	    'airport',

@@ -19,7 +19,7 @@ Paige Niedringhaus
 
 ##Screenshots
 ------------
-To add later
+
 
 Further Info
 ------------

@@ -19,7 +19,7 @@ p {
 #floating-panel {
   position: absolute;
   top: 10px;
-  left: 15%;
+  left: 5%;
   z-index: 5;
   background-color: #fff;
   padding: 5px;
@@ -41,7 +41,7 @@ p {
 .table {
   width: 25%;
   overflow: scroll;
-  height: 91vh;
+  height: 90vh;
 }
 
 /* line 62, ../../compass-master/sass/styles.scss */

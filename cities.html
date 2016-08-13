@@ -56,7 +56,6 @@
 								<th>City</th>
 								<th>Display Info</th>
 								<th>Get A Closer Look</th>
-								<!-- <th>Directions</th> -->
 								<th>State</th>
 								<th>Year Estimate</th>
 								<th>Last Census</th>
@@ -71,10 +70,8 @@
 						</thead>
 						<tbody>
 							<tr ng-repeat="city in (filteredCities = (cities | filter: citiesFilter)) track by $index">
-								<!-- <td>{{city.yearRank}}</td> -->
 								<td><a href="" ng-click="triggerClick($index)">{{city.city}}</a></td>
 								<td><button class="btn btn-primary" ng-click="toggle($index)">Click here for more info</button></td>
-								<!-- <td><button type="submit" ng-click="getDirections(city.lat, city.lon)">Get Directions</button></td> -->
 								<td><button type="submit" ng-click="zoomToCity(city.lat, city.lon)">Zoom in to City</button></td>
 								<td ng-show="city.clicked">{{city.state}}</td>
 								<td ng-show="city.clicked">{{city.yearEstimate}}</td>
@@ -86,8 +83,6 @@
 								<td ng-show="city.clicked">{{city.lastPopDensityInKm}}</td>
 								<td ng-show="city.clicked">{{city.lat}}</td>
 								<td ng-show="city.clicked">{{city.lon}}</td>
-								
-								<!-- </div> -->
 							</tr>
 						</tbody>
 					</table>
