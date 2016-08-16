@@ -4,7 +4,7 @@ Map displaying the top 40 most populous cities in the US (and their accompanying
 
 ##Languages Used
 ------------
-  *HTML
+  * HTML
   * CSS (through SASS)
   * Native JavaScript
   * AngularJS
@@ -44,7 +44,8 @@ Code Examples
 ------------
 JavaScript for creating the markers for each city
 
-```function createMarker(city){
+```javascript
+function createMarker(city){
 		console.log(city);
 		var myLatlng = {lat: city.lat, lng: city.lon};
 		var marker = new google.maps.Marker(
@@ -57,13 +58,15 @@ JavaScript for creating the markers for each city
 
 AngularJS that makes the city names clickable and opens up their name above their pin on the map
 
-```$scope.triggerClick = function(index){
+```javascript
+$scope.triggerClick = function(index){
 		google.maps.event.trigger(markers[index], 'click')
 	}```	    
 
 AngularJS to zoom in to city centers and display selected places
 
-```$scope.zoomToCity = function(lat, lon){
+```javascript
+$scope.zoomToCity = function(lat, lon){
 		var cityLatLon = new google.maps.LatLng(lat, lon);
 		map = new google.maps.Map(
 			document.getElementById('map'),
