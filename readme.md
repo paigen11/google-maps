@@ -57,15 +57,16 @@ function createMarker(city){
 	            map: map,
 	            title: city.city
 	        }
-	    );```
+	        );
+```
 
 
 AngularJS that makes the city names clickable and opens up their name above their pin on the map
 
 ```javascript
 $scope.triggerClick = function(index){
-		google.maps.event.trigger(markers[index], 'click')
-	}```	    
+		google.maps.event.trigger(markers[index], 'click')}
+```	    
 
 
 AngularJS to zoom in to city centers and display selected places
@@ -88,4 +89,5 @@ $scope.zoomToCity = function(lat, lon){
           radius: 5000,
           type: [places]
         }, callback);
-      }```	
+       }
+```	
