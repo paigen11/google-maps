@@ -31,7 +31,7 @@ Display ability to filter cities with input box and button:
 Display ability to filter points of interest within cities:
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-display-poi.png 'google-maps-display-poi.png')
 
-Further Info
+##Further Info
 ------------
 The cities are all called with a function that sets them as objects with an array containing all the relevant data for each. Angular hides the city info except for the name until a user clicks the button to display more information about them.
 
@@ -43,7 +43,7 @@ If users want, they can get directions between two cities by selecting an origin
 
 Users can also zoom in to city centers by clicking the zoom button next to each city in the table, and they can even select from different types of places they want to view through Google Places (restaurants, gyms, dentists, etc.). When they click a place icon, they can see the name of the business, the address and the rating (if the business has any ratings).
 
-Code Examples
+##Code Examples
 ------------
 JavaScript for creating the markers for each city
 
