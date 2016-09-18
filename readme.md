@@ -2,6 +2,10 @@
 ------------
 Map displaying the top 40 most populous cities in the US (and their accompanying facts) using HTML, SASS, JavaScript, AngularJS and the Google Maps API. Users can get directions between two cities, zoom in to the city's center and choose from a long list of points of interest to display in each city.
 
+##Live Demo
+------------
+[Live demo](http://paigeniedringhaus.com/googleMaps/)
+
 ##Languages Used
 ------------
   * HTML
