@@ -4,7 +4,7 @@ Map displaying the top 40 most populous cities in the US (and their accompanying
 
 ##Live Demo
 ------------
-[Live demo](http://paigeniedringhaus.com/googleMaps/)
+[Live demo](http://pn-google-maps.surge.sh)
 
 ##Languages Used
 ------------
