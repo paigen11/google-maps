@@ -1,27 +1,27 @@
-#What is it?
+What is it?
 ------------
 Map displaying the top 40 most populous cities in the US (and their accompanying facts) using HTML, SASS, JavaScript, AngularJS and the Google Maps API. Users can get directions between two cities, zoom in to the city's center and choose from a long list of points of interest to display in each city.
 
-##Live Demo
+Live Demo
 ------------
 [Live demo](http://pn-google-maps.surge.sh)
 
-##Languages Used
+Languages Used
 ------------
   * HTML
   * CSS (through SASS)
   * Native JavaScript
   * AngularJS
 
-##Link to Github documents 
+Link to Github documents 
 ------------
 [Github](https://github.com/paigen11/google-maps.git)
 
-##Authors
+Authors
 ------------
 Paige Niedringhaus
 
-##Screenshots
+Screenshots
 ------------
 Display driving directions: 
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-directions.png 'google-maps-directions.png')
@@ -35,7 +35,7 @@ Display ability to filter cities with input box and button:
 Display ability to filter points of interest within cities:
 ![alt text](https://github.com/paigen11/google-maps/blob/master/screenshots/google-maps-filter-display-poi.png 'google-maps-display-poi.png')
 
-##Further Info
+Further Info
 ------------
 The cities are all called with a function that sets them as objects with an array containing all the relevant data for each. Angular hides the city info except for the name until a user clicks the button to display more information about them.
 
@@ -47,7 +47,7 @@ If users want, they can get directions between two cities by selecting an origin
 
 Users can also zoom in to city centers by clicking the zoom button next to each city in the table, and they can even select from different types of places they want to view through Google Places (restaurants, gyms, dentists, etc.). When they click a place icon, they can see the name of the business, the address and the rating (if the business has any ratings).
 
-##Code Examples
+Code Examples
 ------------
 JavaScript for creating the markers for each city
 
